@@ -1,0 +1,18 @@
+.produto-card {
+    @include media-hover {
+        background-color: $primary
+    }
+    &-title {
+
+        @include text-truncation(2);
+    }
+    &-description {
+        @include text-truncation(4);
+    }
+}
+
+@include media-breakpoint-up(xxl) {}
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(sm) {}

@@ -1,0 +1,54 @@
+#footer {
+    .logo {
+        @include linear-rfs(10rem, 15rem, 375px, 1920px, "width");
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .copyright {
+        border-top: 1px solid rgba($black, 0.1);
+
+        @include media-breakpoint-down(lg) {
+            border: none !important;
+        }
+    }
+
+    a.text-white {
+        @include media-hover {
+            color: white;
+        }
+    }
+}
+
+.mobile-footer-borderless {
+    @include media-breakpoint-down(lg) {
+        border: none !important;
+    }
+}
+
+.grey-text{
+    color: #8f8f8f !important;
+}
+
+.grey-filter{
+    filter: invert(63%) sepia(0%) saturate(1019%) hue-rotate(139deg) brightness(90%) contrast(89%);
+    @include media-hover{
+        filter: brightness(100);
+    }
+}
+
+.underline-hover{
+    @include media-hover{
+        text-decoration: underline;
+    }
+}
+
+.socials-highlight{
+    color: #8f8f8f;
+    transition: all 0.2s;
+    @include media-hover{
+        color: white;
+    }
+}

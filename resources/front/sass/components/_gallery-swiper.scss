@@ -1,0 +1,30 @@
+.gallery-swiper {
+    .video-slide {
+        background-color: rgba($black, 0.25);
+        svg {
+            transition: all 0.75s ease 0.75s;
+
+            @include linear-rfs(5rem, 7rem, 375px, 1920px);
+            circle {
+                stroke-dasharray: 410;
+                stroke-dashoffset: 0;
+                transition: all 0.75s ease;
+            }
+            path {
+                transition: all 0.75s ease;
+            }
+        }
+        @include media-hover {
+            svg {
+                circle {
+                    stroke-dashoffset: 410;
+                }
+                path {
+                    stroke: $primary;
+                    fill: $primary;
+                    transition: all 0.75s ease 0.75s;
+                }
+            }
+        }
+    }
+}

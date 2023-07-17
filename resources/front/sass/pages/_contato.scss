@@ -1,0 +1,49 @@
+#contato {
+    .contacts {
+        .card {
+            height: 100%;
+            @include linear-rfs(1.5rem, 2rem, 375px, 1920px, "padding");
+            display: flex;
+            gap: 0.75rem;
+            background-color: $white;
+            box-shadow: $box-shadow-lg;
+            border-radius: $border-radius-lg;
+        }
+    }
+
+    .form-wrapper {
+        background: linear-gradient(25deg, lighten($primary, 10), darken($primary, 20));
+
+        .formulario {
+            @include media-breakpoint-up(lg) {
+                margin-bottom: -8rem;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+
+    .mapa-wrapper {
+        @include media-breakpoint-up(lg) {
+            margin-top: -5rem;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        & .formulario {
+            background-image: none !important;
+        }
+
+
+    }
+
+    & .formulario {
+        background-size: 45% 100%;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+
+    & .mb--1 {
+        margin-bottom: -5px;
+    }
+}

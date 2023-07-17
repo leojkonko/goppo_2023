@@ -1,0 +1,15 @@
+#offcanvasCategorias {
+    a.active {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        &::before {
+            content: "";
+            width: 0.5em;
+            height: 0.5em;
+            background-color: $primary;
+            border-radius: $border-radius-pill;
+            display: block;
+        }
+    }
+}

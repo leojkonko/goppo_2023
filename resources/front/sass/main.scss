@@ -1,0 +1,16 @@
+@use "sass:color";
+@use "sass:math";
+@use "sass:map";
+
+@import "vendors/bootstrap/functions";
+@import "vendors/bootstrap/mixins";
+
+@import "abstracts";
+@import "core";
+@import "components";
+@import "layout";
+@import "pages";
+@import "sections";
+
+// NÃO remover linha abaixo \/
+// #Imports

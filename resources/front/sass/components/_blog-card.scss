@@ -1,0 +1,28 @@
+.blog-card {
+    transition: $transition-base;
+    @include media-hover {
+        * {
+            color: $white;
+        }
+        background-color: $primary;
+    }
+    &-title {
+        @include linear-rfs(1rem, 1.25rem, 375px, 1920px);
+        @include text-truncation(2);
+    }
+    &-description {
+        @include linear-rfs(0.8rem, 1rem, 375px, 1920px);
+        @include text-truncation(4);
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+}
+@include media-breakpoint-up(xl) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(sm) {
+}

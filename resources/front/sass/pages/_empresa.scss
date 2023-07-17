@@ -1,0 +1,48 @@
+#empresa {
+    .mvv-card {
+        .icon {
+            color: $primary;
+            @include linear-rfs(3rem, 5rem, 375px, 1920px, "max-width");
+        }
+    }
+    .gallery-wrapper {
+        @include media-breakpoint-up(lg) {
+            float: right;
+        }
+    }
+}
+
+.historia {
+    &-swiper {
+        .card {
+            padding-right: 2rem;
+            position: relative;
+            .badge {
+                font-size: 1rem;
+                padding: 0.75rem;
+            }
+            &:not(:last-child)::after {
+                content: "";
+                width: 1.5rem;
+                height: 1.5rem;
+                position: absolute;
+                right: 0;
+                transform: translateX(50%);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url("data:image/svg+xml,%3Csvg width='21' height='22' viewBox='0 0 21 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 21L20 11M20 11L10 0.999999M20 11L7.41552e-07 11' stroke='%233B4448'/%3E%3C/svg%3E%0A");
+                display: block;
+            }
+            &:nth-child(odd) {
+                .badge {
+                    background-color: $primary;
+                }
+            }
+            &:nth-child(even) {
+                .badge {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}

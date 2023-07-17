@@ -1,0 +1,91 @@
+.header {
+    z-index: $zindex-header;
+
+    &-logo {
+        @include linear-rfs(10rem, 15rem, 375px, 1920px, "width");
+    }
+
+    .menu {
+        a {
+            padding: 0.25rem 0.75rem;
+            border-radius: $border-radius-sm;
+
+            &.active {
+                background-color: rgba($primary, 0.1);
+            }
+        }
+    }
+
+    .item-header {
+        @include media-breakpoint-up(lg) {
+            font-size: 1.1rem;
+        }
+
+        .link-header-home:hover {
+            &::after {
+                content: "home";
+                color: transparent;
+                position: absolute;
+                display: flex;
+                bottom: 0;
+                border-bottom: 8px solid #277CEA;
+            }
+        }
+
+        .link-header-sobre-a-empresa:hover {
+            &::after {
+                content: "sobre";
+                color: transparent;
+                position: absolute;
+                display: flex;
+                bottom: 0;
+                border-bottom: 8px solid #277CEA;
+            }
+        }
+
+        .link-header-produtos:hover {
+            &::after {
+                content: "produtos";
+                color: transparent;
+                position: absolute;
+                display: flex;
+                bottom: 0;
+                border-bottom: 8px solid #277CEA;
+            }
+        }
+
+        .link-header-representantes:hover {
+            &::after {
+                content: "representantes";
+                color: transparent;
+                position: absolute;
+                display: flex;
+                bottom: 0;
+                border-bottom: 8px solid #277CEA;
+            }
+        }
+
+        .link-header-contato:hover {
+            &::after {
+                content: "contato";
+                color: transparent;
+                position: absolute;
+                display: flex;
+                bottom: 0;
+                border-bottom: 8px solid #277CEA;
+            }
+        }
+    }
+}
+
+.breadcrumb-item-margin::before {
+    margin-top: 0.3rem;
+}
+
+.logo-header {
+    @media(min-width: 992px) {
+        width: 250px;
+    }
+
+    width: 150px;
+}
